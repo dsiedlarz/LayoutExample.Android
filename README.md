@@ -1,6 +1,6 @@
-#Example Layout#
+<h1>Example Layout</h1>
 
-###Aplikacja pokazująca najpopularniejsze Layout'y###
+<h3>Aplikacja pokazująca najpopularniejsze Layout'y</h3>
 
 Zad 1. Zaimplementować analogiczną aplikacje z conajmniej trzema ekranami z różnymi Layout'ami
 
