@@ -7,20 +7,64 @@
     tools:context="edu.dsiedlarz.layoutexamples.RelativeLayoutActivity">
 
     <TextView
-        android:id="@+id/label"
+        android:id="@+id/helloWorldText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Relative layout"
-        android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
+        android:text="Hello World!"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
         />
+
     <Button
+        android:id="@+id/helloButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Go to constraint layoutt"
+        android:text="Go to constraint layout"
         android:onClick="goToConstraintLayout"
-        android:layout_below="@id/label"
-        android:layout_toRightOf="@id/label"
+        android:layout_below="@id/helloWorldText"
+        android:layout_toRightOf="@id/helloWorldText"
         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/helloButton"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="text1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="text1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="text1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="text1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="text1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="text1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </RelativeLayout>
